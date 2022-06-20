@@ -12,6 +12,9 @@ const Header: React.FC = () => {
             </span>
             <div className="avatar"></div>
         </div>
+        <button className='sign_out_btn'>
+                Log Out
+            </button>
     </div>
 }
 
