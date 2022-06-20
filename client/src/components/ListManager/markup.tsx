@@ -6,11 +6,11 @@ const ListManagerMarkup: React.FC = () => {
     
     const [visible, setVisible] = useState(false)
     const inputValue = useRef(null)
+
     const [value, setValue] = useState('')
 
     const lists: string[] = [
         'home', 'work', 'shopping',
-       
     ]
     
     const createNewList = (key: string) => {
@@ -20,7 +20,7 @@ const ListManagerMarkup: React.FC = () => {
     }
 
     const NewListForm = () => <div>
-        <input autoFocus ref={inputValue} type="text" onKeyDown={(e) => createNewList(e.key)}/>
+        <input className="create_list_input" autoFocus ref={inputValue} type="text" onKeyDown={(e) => createNewList(e.key)}/>
     </div>
 
 

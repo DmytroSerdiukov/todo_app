@@ -1,5 +1,5 @@
 .list_manager_container {
-    width: 290px;
+    width: 350px;
     height: 370px;
     background-color: #fff;
     border-radius: 10px;
@@ -27,4 +27,9 @@
         background-color: #F0E7FF;
         cursor: pointer;
     }
+}
+
+.create_list_input {
+    width: 190px;
+    height: 30px;
 }
