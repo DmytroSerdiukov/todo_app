@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.app_container {
+    width: 1600px;
+    height: 100%;
+    // display: flex;
+    // justify-content: center;
+    margin: auto;
+}
+
+.container_lists {
+    display: flex;
+    justify-content: space-around;
+    width: 1400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #FAE3E3;
+}

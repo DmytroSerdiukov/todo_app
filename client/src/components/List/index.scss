@@ -1,0 +1,44 @@
+
+
+.list_container {
+    width: 900px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.list_task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    height: 150px;
+    background-color: #FFF8F8;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.list_task_btns {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.create_task {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 50px;
+    background-color: #fff;
+    border: 5px dashed black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
