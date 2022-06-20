@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./index.scss";
 
@@ -19,11 +19,21 @@ const ListDetails: React.FC<IDetails> = ({data}) => {
 };
 
 const ListMarkup: React.FC = () => {
+
+    const [visible, setVisible] = useState(false)
+    console.log(visible)
     const lists: string[] = ["home", "work", "shopping"];
+
+    const changeVisibleState = () => setVisible(!visible)
+
 
     return (
         <div className="list_container">
-            <div className="create_task">Create new task</div>
+            {
+                visible ?
+                <input className="create_task_input" placeholder="Type something..." type={'text'} />
+                : <div onClick={changeVisibleState} className="create_task">Create new task</div>
+            }
             {lists && lists.length > 0 ? (
                 lists.map((el, i) => <ListDetails key={i} data={el} />)
             ) : (
