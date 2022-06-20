@@ -1,15 +1,11 @@
-import Header from "components/Header";
-import List from "components/List/container";
-import ListManager from "components/ListManager/container";
 import React from "react";
-import './index.scss'
+import "./index.scss";
+import Main from "./pages/Main";
 
-const App = () => <div className="app_container">
-    <Header />
-    <div className="container_lists">
-        <ListManager />
-        <List />
-    </div>
-</div>;
+const App = () => (
+    <>
+        <Main />
+    </>
+);
 
 export default App;
