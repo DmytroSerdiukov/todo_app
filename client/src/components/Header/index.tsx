@@ -3,18 +3,18 @@ import './index.scss'
 
 const Header: React.FC = () => {
     return <div className="container">
-        <h1>
+        <h1 className='logo'>
             TODO App
         </h1>
         <div className='user_info'>
-            <span>
+            <span className='user_info_name'>
                 Dmytro Serdiukov
             </span>
             <div className="avatar"></div>
-        </div>
         <button className='sign_out_btn'>
-                Log Out
-            </button>
+            Log Out
+        </button>
+        </div>
     </div>
 }
 

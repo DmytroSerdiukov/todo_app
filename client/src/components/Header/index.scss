@@ -2,7 +2,7 @@
     width: 1300px;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #fff;
     border-radius: 10px;
@@ -10,17 +10,27 @@
     margin-top: 20px;
 }
 
+.logo {
+    margin-left: 20px;
+}
+
 .user_info {
     width: 400px;
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
     align-items: center;
+}
+
+.user_info_name {
+    margin-right: 10px;
 }
 
 .avatar {
     width: 50px;
     height: 50px;
     background-color: red;
+    margin-right: 30px;
+    border-radius: 50px;
 }
 
 .sign_out_btn {
